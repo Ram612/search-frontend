@@ -26,7 +26,7 @@ function FilterComponent() {
 
     return <>
         <div className="title">
-            <h1>Search books from Packt</h1>
+            <h1 className="heading">Search books from Packt</h1>
         </div>
         <div className="body">
             <input
@@ -37,19 +37,32 @@ function FilterComponent() {
             />
 
             <h2>List of Books</h2>
-            <ul className="items-unorder">
-                {data
-                    .filter((data) => data.book_title.toLowerCase().includes(input))
-                    .map((items)=> {
-                    return (
-                    <>
-                        <li className="items-list" key={items.id}>
-                            {items.book_title}
-                        </li>
-                    </>
-                    );
-                })} 
-            </ul>
+            <span className="icon">From Packt</span>
+                <ul className="items-unorder">
+                    {data
+                        .filter((data) => data.book_title.toLowerCase().includes(input))
+                        .map((items)=> {
+                        return (
+                        <>  
+                            <li className="items-list" key={items.id}>
+                                <div className="row">
+                                    <div className="col-md-3">
+                                        <div className="card">
+                                            <h3>
+                                                {items.book_title}
+                                            </h3>
+                                            
+                                            <span className="subtitle">
+                                                ${items.price}
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>  
+                        </>
+                        );
+                    })}
+                </ul> 
         </div>
     </>;
 }
