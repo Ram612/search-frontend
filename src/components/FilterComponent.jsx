@@ -29,14 +29,23 @@ function FilterComponent() {
             <h1>Search books from Packt</h1>
         </div>
         <div className="body">
-            <input type="text" name="books" value="search for books..." onChange={(e)=> setInput(e.target.value)}/>
-        </div>
-        <div className="list">
-            <ul>
-                {data.map((items)=> {
+            <input
+                className="input-style" 
+                type="text" 
+                name="book"
+                onChange={(e)=> setInput(e.target.value)}
+            />
+
+            <h2>List of Books</h2>
+            <ul className="items-unorder">
+                {data
+                    .filter((data) => data.book_title.toLowerCase().includes(input))
+                    .map((items)=> {
                     return (
                     <>
-                    <li key={items.id}>{items.book_title}</li>
+                        <li className="items-list" key={items.id}>
+                            {items.book_title}
+                        </li>
                     </>
                     );
                 })} 

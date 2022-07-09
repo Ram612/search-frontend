@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+.items-unorder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.items-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3aa6f;
+  width: 80%;
+  height: 50px;
+  margin: 5px;
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+.input-style {
+  width: 60%;
+  height: 50px;
+  font-size: 1.2rem;
+}
+
