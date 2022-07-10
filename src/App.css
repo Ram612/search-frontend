@@ -71,13 +71,20 @@
 }
 
 .input-style {
-  width: 60%;
-  height: 50px;
+  width: 40%;
+  height: 40px;
   font-size: 1.2rem;
+  padding: 10px;
 }
 
 .title {
   font-weight: 900;
+  display: inline-block;
+  width: 100%;
+}
+
+.sub-title {
+  font-weight: 400;
   display: inline-block;
   width: 100%;
 }

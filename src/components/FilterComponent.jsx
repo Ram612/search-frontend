@@ -7,6 +7,8 @@ function FilterComponent() {
 
     const fetchBook = async () =>{
         const response = await fetch("http://127.0.0.1:8000/api/books");
+        //Packt API
+        // const response = await fetch("https://api.packt.com/api/v1/products/{id}?token=QnJxdndgUyKWJOnlqq8UqCHz6k5tCYn9MqCR6Lr4");
         setData(await response.json());
     }
 
@@ -33,36 +35,33 @@ function FilterComponent() {
                 className="input-style" 
                 type="text" 
                 name="book"
+                placeholder="Search titles..." 
                 onChange={(e)=> setInput(e.target.value)}
             />
 
             <h2>List of Books</h2>
             <span className="icon">From Packt</span>
-                <ul className="items-unorder">
-                    {data
-                        .filter((data) => data.book_title.toLowerCase().includes(input))
-                        .map((items)=> {
-                        return (
-                        <>  
-                            <li className="items-list" key={items.id}>
-                                <div className="row">
-                                    <div className="col-md-3">
-                                        <div className="card">
-                                            <h3>
-                                                {items.book_title}
-                                            </h3>
-                                            
-                                            <span className="subtitle">
-                                                ${items.price}
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>  
-                        </>
-                        );
-                    })}
-                </ul> 
+            <ul className="items-unorder">
+                {data
+                    .filter((data) => data.book_title.toLowerCase().includes(input))
+                    .map((items)=> {
+                    return (
+                    <>  
+                        <li className="items-list" key={items.id}>
+                            <div className="card">
+                                <h3>
+                                    {items.book_title}
+                                </h3>
+                                
+                                <span className="sub-title">
+                                    ${items.price}
+                                </span>
+                            </div>
+                        </li>  
+                    </>
+                    );
+                })}
+            </ul> 
         </div>
     </>;
 }
