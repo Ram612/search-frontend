@@ -1,12 +1,12 @@
-# Frontend search webpage application
+# Frontend Search Webpage Application
 
-This is a search web page application only by books title from local db or you can change the API URL of Clients and servers exchange data using HTTP.
+This is a web page application were user can browse through the titles using API metadata of Packt.
 
 # Highlights
 
 1. Built using React Js created filter components
 2. Used Css for styling
-3. Making HTTP calls to search the books title from local db and also using API request.
+3. Making HTTP calls to search the books title from local db and also using API request .
 
 # Cloning and Running the Application in local
 
@@ -41,4 +41,4 @@ You may also see any lint errors in the console.
 ![Video transcription/translation app](https://github.com/Ram612/search-frontend/blob/dd5b9ee0b44581594803775ebd83c921343cb13b/public/images/searching-frontend.png)
 
 ## Final Output
-![Video transcription/translation app](https://github.com/Ram612/search-frontend/blob/dd5b9ee0b44581594803775ebd83c921343cb13b/public/images/final-output-api.png)
+![Video transcription/translation app](https://github.com/Ram612/search-frontend/blob/b4bdd45138c11ef147f2e8921f1c2b637694d62c/public/images/final-output-api.png)
