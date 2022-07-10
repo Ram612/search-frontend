@@ -1,6 +1,6 @@
 # Frontend search webpage application
 
-This is a search web page application only by books title from db or you can change the .
+This is a search web page application only by books title from local db or you can change the API URL of Clients and servers exchange data using HTTP.
 
 # Highlights
 
@@ -33,3 +33,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+## Sample Output
+
+![Video transcription/translation app](https://github.com/Ram612/search-frontend/blob/dd5b9ee0b44581594803775ebd83c921343cb13b/public/images/search-frontend.png)
+
+![Video transcription/translation app](https://github.com/Ram612/search-frontend/blob/dd5b9ee0b44581594803775ebd83c921343cb13b/public/images/searching-frontend.png)
