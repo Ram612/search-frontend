@@ -13,7 +13,7 @@ This is a search web page application only by books title from local db or you c
 Clone the project into local
 
 ```bash
-https://github.com/Ram612/search-frontend.git
+git clone https://github.com/Ram612/search-frontend.git
 ```
 Install all the npm packages. Go to the project folder and type the following command to install all npm packages
 
@@ -39,3 +39,6 @@ You may also see any lint errors in the console.
 ![Video transcription/translation app](https://github.com/Ram612/search-frontend/blob/dd5b9ee0b44581594803775ebd83c921343cb13b/public/images/search-frontend.png)
 
 ![Video transcription/translation app](https://github.com/Ram612/search-frontend/blob/dd5b9ee0b44581594803775ebd83c921343cb13b/public/images/searching-frontend.png)
+
+## Final Output
+![Video transcription/translation app](https://github.com/Ram612/search-frontend/blob/dd5b9ee0b44581594803775ebd83c921343cb13b/public/images/final-output-api.png)
